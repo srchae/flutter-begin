@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
             body: Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(height: 80),
                   Row(mainAxisAlignment: MainAxisAlignment.end, children: [
@@ -38,6 +39,23 @@ class MyApp extends StatelessWidget {
                           )
                         ]),
                   ]),
+                  SizedBox(
+                    height: 120,
+                  ),
+                  Text(
+                    "Total Balance",
+                    style: TextStyle(
+                      color: Colors.white54,
+                      fontSize: 20,
+                    ),
+                  ),
+                  Text(
+                    "\$5 194 382",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 40,
+                        fontWeight: FontWeight.w700),
+                  ),
                 ],
               ),
             )));
