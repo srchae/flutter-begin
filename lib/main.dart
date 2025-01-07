@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
                         ]),
                   ]),
                   SizedBox(
-                    height: 120,
+                    height: 100,
                   ),
                   Text(
                     "Total Balance",
@@ -56,6 +56,39 @@ class MyApp extends StatelessWidget {
                         fontSize: 40,
                         fontWeight: FontWeight.w700),
                   ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                          decoration: BoxDecoration(
+                            color: Colors.amber,
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 45, vertical: 20),
+                            child: Text(
+                              "Transfer",
+                              style: TextStyle(fontSize: 20),
+                            ),
+                          )),
+                      Container(
+                        decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(50)),
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 45, vertical: 20),
+                          child: Text(
+                            "Request",
+                            style: TextStyle(fontSize: 20, color: Colors.white),
+                          ),
+                        ),
+                      )
+                    ],
+                  )
                 ],
               ),
             )));
