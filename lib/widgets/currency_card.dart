@@ -5,7 +5,6 @@ class CurrencyCard extends StatelessWidget {
   final IconData icon;
 
   const CurrencyCard(
-      // super.key
       {super.key,
       required this.name,
       required this.code,
